@@ -5,7 +5,7 @@ body{
 
 .to-do-list {
     background-color: gray;
-    margin: 5% 10%;
+    margin: 5% 10% 0%;
     overflow: hidden;
 }
 
@@ -38,11 +38,18 @@ label+input {
     font-size: 1em;
     border: 1px solid lightgray;
     height: 2.1em;
-    margin: 0;
-    
+    margin: 0;  
 }
 
-li {
+.li {
     font: 3em;
-    color: pink;
+}
+
+.ul {
+    text-align: left;
+    overflow: hidden;
+    list-style-type: none;
+    background-color: white;
+    margin: 0% 10%;
+    padding: 1em;
 }
