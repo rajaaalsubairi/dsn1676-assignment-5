@@ -19,25 +19,23 @@ label+input {
     margin: 5% 0% 5% 10%;
 }
 
+input {
+    height: 2em;
+    font-size: 1em;
+}
+
 .todo {
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
     margin-top: 5%;
 }
 
-.field {
-    height: 1em;
-    border: 1px solid lightgray;
-    border-radius: 4px;
-    padding: .5em;
-    font-size: 1em;
-}
 
 .button {
     background-color: lightgray;
     font-size: 1em;
-    border: 1px solid lightgray;
-    height: 2.1em;
+    border: 1px solid black;
+    height: 2.5em;
     margin: 0;  
 }
 
@@ -51,5 +49,31 @@ label+input {
     list-style-type: none;
     background-color: white;
     margin: 0% 10%;
-    padding: 1em;
+    padding: 2em;
+    line-height: 1.5em;
+}
+
+.done {
+    text-decoration-line: line-through;
+}
+
+.xbutton {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 1px solid dimgray;
+    border-radius: .5em;
+    background-color: lightgray;
+    height: 30px;
+    width: 20px;
+}
+
+.xbutton:hover {
+    color: cornflowerblue;
+    background-color: dimgray;
+}
+    
+.remove {
+    float: right;
+    overflow: hidden;
 }
