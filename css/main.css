@@ -61,16 +61,15 @@ input {
     text-align: center;
     margin: 0;
     padding: 0;
-    border: 1px solid dimgray;
-    border-radius: .5em;
+    border: none;
     background-color: lightgray;
-    height: 30px;
+    height: 20px;
     width: 20px;
 }
 
 .xbutton:hover {
-    color: cornflowerblue;
-    background-color: dimgray;
+    color: white;
+    background-color: gray;
 }
     
 .remove {

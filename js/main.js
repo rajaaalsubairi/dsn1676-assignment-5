@@ -7,24 +7,20 @@ var $li = $('<li>');
 $form.on('submit', function (eventObject) {
     eventObject.preventDefault();
     
-    $ul.css('ul', $input.val());
-    
     var $li = $('<li>');
     $li.html($input.val());
-    $ul.append($li);
-    $input.val('');
 
-
-
-    $ul.on('click', 'li', function () {
-        $('this').addClass('done');
-    });
-
-    var $inputRemove = $('<button class="remove xbutton>X</button">');
+    var $inputRemove = $('<button class="remove xbutton">X</button>');
 
     $inputRemove.on('click', function () {
         $li.remove('li');
     });
     
+    $li.click(function() {
+        $(this).addClass('done');
+    });
+    
     $li.append($inputRemove);
+    $ul.append($li);
+    $input.val('');
 });
